@@ -1,11 +1,5 @@
 import { useLoaderData, Link } from "react-router-dom";
 
-type careersType = {
-  id: number;
-  title: string;
-  location: string;
-};
-
 const Careers = () => {
   const careersData = useLoaderData();
   return (

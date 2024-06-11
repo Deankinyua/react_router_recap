@@ -19,6 +19,7 @@ import Careers from "./pages/careers/Careers";
 import CareersLayout from "./layout/CareersLayout";
 
 // Loaders
+import { careersLoader } from "./pages/careers/LoaderFunction";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -31,7 +32,7 @@ const router = createBrowserRouter(
       </Route>
 
       <Route path="careers" element={<CareersLayout />}>
-        <Route index element={<Careers />}></Route>
+        <Route index element={<Careers />} loader={careersLoader}></Route>
       </Route>
 
       <Route path="*" element={<NotFound />}></Route>
