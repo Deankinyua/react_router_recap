@@ -2,6 +2,8 @@ import { useLoaderData, Link } from "react-router-dom";
 
 const Careers = () => {
   const careersData = useLoaderData();
+  console.log(careersData);
+
   return (
     <div className="careers">
       {careersData.map((career) => (
