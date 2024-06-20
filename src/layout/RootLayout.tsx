@@ -1,4 +1,5 @@
 import { NavLink, Outlet } from "react-router-dom";
+import Breadcrumbs from "../components/Breadcrumbs";
 
 const RootLayout = () => {
   return (
@@ -12,6 +13,7 @@ const RootLayout = () => {
           <NavLink to="help">Help</NavLink>
           <NavLink to="careers">Careers</NavLink>
         </nav>
+        <Breadcrumbs></Breadcrumbs>
       </header>
       <main>
         {/*  The outlet component allows us to render those component routes embedded in the root layout */}
